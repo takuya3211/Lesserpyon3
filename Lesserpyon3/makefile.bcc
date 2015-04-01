@@ -1,0 +1,21 @@
+all: shogi.exe
+objs= KomaMoves.obj kyokumen.obj main.obj te.obj joseki.obj
+
+shogi.exe: $(objs)
+	bcc32 -Lc:\borland\bcc55\lib -eshogi.exe $(objs)
+
+KomaMoves.obj:	kyokumen.h KomaMoves.cpp
+	bcc32 -V0 -Vd -D_WINDOWS -Ic:\borland\bcc55\include -c KomaMoves.cpp
+
+kyokumen.obj:	kyokumen.h kyokumen.cpp
+	bcc32 -V0 -Vd -D_WINDOWS -Ic:\borland\bcc55\include -c kyokumen.cpp
+
+te.obj:	kyokumen.h te.cpp
+	bcc32 -V0 -Vd -D_WINDOWS -Ic:\borland\bcc55\include -c te.cpp
+
+main.obj:	main.h kyokumen.h main.cpp
+	bcc32 -V0 -Vd -D_WINDOWS -Ic:\borland\bcc55\include -c main.cpp
+
+joseki.obj:	joseki.cpp
+	bcc32 -V0 -Vd -D_WINDOWS -Ic:\borland\bcc55\include -c joseki.cpp
+

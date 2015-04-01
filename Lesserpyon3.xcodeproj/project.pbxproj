@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B06007451A2C40EF00725730 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06007441A2C40EF00725730 /* main.cpp */; };
+		B060074F1A2C482C00725730 /* Joseki.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B060074B1A2C482C00725730 /* Joseki.cpp */; };
+		B06007501A2C482C00725730 /* KomaMoves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B060074C1A2C482C00725730 /* KomaMoves.cpp */; };
+		B06007511A2C482C00725730 /* kyokumen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B060074D1A2C482C00725730 /* kyokumen.cpp */; };
+		B06007541A2C483A00725730 /* Te.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B06007531A2C483A00725730 /* Te.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,12 @@
 /* Begin PBXFileReference section */
 		B06007411A2C40EF00725730 /* Lesserpyon3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesserpyon3; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06007441A2C40EF00725730 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B060074B1A2C482C00725730 /* Joseki.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joseki.cpp; sourceTree = "<group>"; };
+		B060074C1A2C482C00725730 /* KomaMoves.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KomaMoves.cpp; sourceTree = "<group>"; };
+		B060074D1A2C482C00725730 /* kyokumen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kyokumen.cpp; sourceTree = "<group>"; };
+		B060074E1A2C482C00725730 /* kyokumen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kyokumen.h; sourceTree = "<group>"; };
+		B06007521A2C483400725730 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		B06007531A2C483A00725730 /* Te.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Te.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,12 @@
 		B06007431A2C40EF00725730 /* Lesserpyon3 */ = {
 			isa = PBXGroup;
 			children = (
+				B06007531A2C483A00725730 /* Te.cpp */,
+				B060074B1A2C482C00725730 /* Joseki.cpp */,
+				B060074C1A2C482C00725730 /* KomaMoves.cpp */,
+				B060074D1A2C482C00725730 /* kyokumen.cpp */,
+				B060074E1A2C482C00725730 /* kyokumen.h */,
+				B06007521A2C483400725730 /* main.h */,
 				B06007441A2C40EF00725730 /* main.cpp */,
 			);
 			path = Lesserpyon3;
@@ -118,7 +134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06007541A2C483A00725730 /* Te.cpp in Sources */,
+				B06007511A2C482C00725730 /* kyokumen.cpp in Sources */,
+				B060074F1A2C482C00725730 /* Joseki.cpp in Sources */,
 				B06007451A2C40EF00725730 /* main.cpp in Sources */,
+				B06007501A2C482C00725730 /* KomaMoves.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +252,7 @@
 				B060074A1A2C40EF00725730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

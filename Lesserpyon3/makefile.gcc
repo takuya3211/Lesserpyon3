@@ -1,0 +1,21 @@
+all: shogi
+objs= KomaMoves.o kyokumen.o main.o Te.o Joseki.o
+
+shogi: $(objs)
+	g++ -o shogi $(objs)
+
+KomaMoves.o:	kyokumen.h KomaMoves.cpp
+	gcc -D_GCC_ -c KomaMoves.cpp
+
+kyokumen.o:	kyokumen.h kyokumen.cpp
+	gcc -D_GCC_ -c kyokumen.cpp
+
+Te.o:	kyokumen.h Te.cpp
+	gcc -D_GCC_ -c Te.cpp
+
+main.o:	main.h kyokumen.h main.cpp
+	gcc -D_GCC_ -c main.cpp
+
+Joseki.o:	Joseki.cpp
+	gcc -D_GCC_ -c Joseki.cpp
+
